@@ -1,0 +1,215 @@
+@use 'variables' as *;
+
+
+html, body { height: 100%; margin: 0; padding: 0; }
+
+
+
+.conteudo {
+
+
+position:relative;
+height: 840px;
+  width: 100%;
+
+
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* preenche a tela sem distorcer (corta) */
+
+
+  margin-bottom: 138px;
+}
+
+@media (max-width: 1024px) {
+  .conteudo {
+    height: 600px;
+    background-image: url('../images/hero.png');
+  }
+
+  .nav__list {
+    gap: 30px;
+    margin-right: 50px;
+  }
+
+  .texto {
+    font-size: 30px;
+    top: 35%;
+  }
+
+  .texto1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .conteudo {
+    height: 500px;
+    background-image: url('../images/hero-mobile.png');
+  }
+
+  /* MENU some no mobile */
+  .nav__list {
+    display: none;
+  }
+
+  /* Hamburger aparece */
+  .hamb {
+    display: block;
+  }
+
+  .nav {
+    padding: 0 20px;
+  }
+
+  .texto {
+    font-size: 22px;
+    top: 40%;
+    line-height: 1.2;
+  }
+
+  .texto1 {
+    font-size: 14px;
+    margin-left: 0;
+    text-align: center;
+    font-size: clamp(22px, 5vw, 40px);
+  line-height: 1.1;
+  }
+}
+
+
+
+
+
+
+.nav {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+ z-index: 10;
+align-items: center;
+
+
+
+}
+
+
+.nav__list{
+
+
+  list-style: none;
+    display: flex;
+  gap: 50px;
+
+  list-style: none;
+
+  margin-left: auto; /* joga pra direita */
+  margin-right: 110px;
+  margin-top:1px
+
+}
+
+
+
+
+.texto{
+
+  position: absolute;
+
+  top: 30%;
+  left: 50%;
+color:white;
+font-family: Cinzel;
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+
+line-height: 0.4;
+letter-spacing: -1.5px;
+text-align: center;
+vertical-align: middle;
+ transform: translate(-50%, -50%);
+
+}
+
+.texto1{
+
+
+  margin-left:50px;
+  margin-top:50px;
+z-index: 10;
+
+color:white;
+font-family: Cinzel;
+font-weight: 400;
+font-style: Bold;
+font-size: 20px;
+
+line-height: 0.5;
+letter-spacing: -1.5px;
+text-align: center;
+vertical-align: middle;
+
+
+}
+
+
+
+.logo{
+
+
+  position: relative;
+
+
+
+
+
+}
+
+
+
+
+.call{
+padding-bottom: 1px;
+margin-right:0;
+display:block;
+width: 24px;
+  height: 24px;
+
+color:white;
+
+
+  background-color: black;
+  background-image: url('../images/call.png');
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+
+.hamb{
+  margin-bottom: 1px;
+  padding-bottom:1px;
+margin-right:0;
+display:block;
+width:  24px;
+  height: 24px;
+
+color:white;
+
+
+  background-color: black;
+  background-image: url('../images/burger.png');
+  background-size: cover;
+  background-position: center;
+
+
+}
