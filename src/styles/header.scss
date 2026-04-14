@@ -116,6 +116,7 @@ body {
 
 .phonecta__lista {
   padding-left: 0;
+  color:white;
 }
 
 .phonecta__itemlista {
@@ -143,8 +144,14 @@ body {
 
 .cabecalho {
   display: flex;
-
   align-items: center;
+justify-content: space-between;
+  gap: 15px; /* espaço entre ícone e texto */
+
+
+
+
+
 }
 
 .textomenu {
@@ -152,6 +159,7 @@ body {
   flex-direction: column;
   gap: 4px; /* espaçamento entre THE e MET */
   align-items: flex-start; /* ou center */
+
 }
 
 .THE,
@@ -163,20 +171,30 @@ body {
 .vector {
 
 
-
-  display: inline-block;
-
+margin-right: 20%;
 
 
-  width: 30px;
-  height: 30px;
+  width: clamp(30px, 4vw, 40px);
+  height: clamp(30px, 4vw, 40px);
 
   background-image: url('../images/Vector.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 
-  margin-top: 15px;
-  margin-right: 10%;
-  margin-left:80%;
+  flex-shrink: 0;
+
+
+
+}
+
+@media (max-width: 700px) {
+  .vector {
+    margin-right: 30%;
+  }
+}
+
+.phonecta__link{
+  color: white;
 }
 
