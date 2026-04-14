@@ -5,12 +5,14 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
   align-items: start;
 }
+
 .col-4 {
   grid-column: span 4;
 }
@@ -64,6 +66,7 @@
   line-height: 140%;
   letter-spacing: 0px;
 }
+
 .contact__colecao2 {
   margin: 0;
 
@@ -116,10 +119,9 @@ textarea {
 }
 
 .modelo {
-  width: 70%;
+  width: 100%;
   max-width: 1260px;
-  margin: auto;
-
+margin: auto;
   min-height: 200px;
 
   box-sizing: border-box;
@@ -129,16 +131,17 @@ textarea {
   background-size: cover;
   background-position: center center;
 
-  margin-bottom: 200px;
+  margin-bottom: 10px;
 
   transition: transform 300ms ease;
   transform-origin: center center;
 }
 
 .modelo:hover {
-  transform: scale(1.8); /* aumenta 40% */
+  transform: scale(1.2); /* aumenta 40% */
 }
 
 .FIM {
-  margin-top: 100px;
+  margin-top: 10px;
+  width:100%;
 }
