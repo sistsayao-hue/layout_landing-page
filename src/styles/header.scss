@@ -1,29 +1,7 @@
 @use 'variables' as *;
 
-
-
-
 body {
   margin: 0;
-
-}
-
-
-
-.menu{
-
-border: 2px solid white;
-
-background-color: $fundo;
-
-background-color: green;
-
-display:block;
-
-padding-left:121px;
-
-color: $menutexto;
-
 }
 
 
@@ -34,211 +12,139 @@ color: $menutexto;
 
 }
 
+.menu {
+  border: 2px solid white;
 
+  background-color: $fundo;
 
+  background-color: green;
 
-.textomenu{
+  display: block;
 
-font-family: Cinzel;
-font-weight: 700;
-font-style: Bold;
-font-size: 40px;
-line-height: 80%;
-letter-spacing: -1.5px;
-text-align: center;
-vertical-align: middle;
+  padding-left: 121px;
 
-
-color: $menutexto;
-
-margin-top:30px;
-margin-bottom: 55px;
-
-
-
+  color: $menutexto;
 }
 
-.menuitens__lista{
- display: flex;
+.textomenu {
+  font-family: Cinzel;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 80%;
+  letter-spacing: -1.5px;
+  text-align: center;
+  vertical-align: middle;
+
+  color: $menutexto;
+
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+
+.menuitens__lista {
+  display: flex;
   flex-direction: column;
-gap:32px;
-padding-left: 0;
-margin-top:5px;
+  gap: 32px;
+  padding-left: 0;
+  margin-top: 5px;
+ color: $menutexto;
+  list-style: none;
+  color: $menutexto;
 
+  font-family: Cinzel;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
 
-list-style: none;
-color: $menutexto;
-
-font-family: Cinzel;
-font-weight: 700;
-font-style: Bold;
-font-size: 22px;
-
-line-height: 22px;
-letter-spacing: 2px;
-vertical-align: middle;
-text-transform: uppercase;
-
-
-
-
+  line-height: 22px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
+.phonecta {
+  display: flex;
+  flex-direction: column;
 
+  padding-left: 0;
 
-
-
-
-
-.phonecta{
-
- display: flex;
-flex-direction: column;
-
-padding-left: 0;
-
-
-
-list-style: none;
-color: $menutexto;
-color: #FFFFFF;
-
-
+  list-style: none;
+  color: $menutexto;
+  color: #ffffff;
 }
 
-.phonecta__itemlista.group { display: flex; flex-direction: column; gap: 4px;
-margin-bottom: 18px; }
-.phonecta__itemlista.group .phonecta__link { line-height: 1;color:white;
+.phonecta__itemlista.group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 18px;
+}
+.phonecta__itemlista.group .phonecta__link {
+  line-height: 1;
+  color: white;
 
-font-family: Cinzel;
-font-weight: 700;
-font-style: Bold;
-font-size: 16px;
+  font-family: Cinzel;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
 
-
-letter-spacing: 0px;
-vertical-align: middle;
-text-transform: uppercase;
-
-
-
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .phonecta__itemlista.group2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 30px;
+}
+.phonecta__itemlista.group2 .phonecta__link {
+  line-height: 1;
+  color: white;
 
+  font-family: Cinzel;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
 
-
-
-
-
-  display: flex; flex-direction: column; gap: 4px;
-margin-bottom: 30px; }
-.phonecta__itemlista.group2 .phonecta__link { line-height: 1;color:white;
-
-font-family: Cinzel;
-font-weight: 700;
-font-style: Bold;
-font-size: 16px;
-
-
-letter-spacing: 0px;
-vertical-align: middle;
-text-transform: uppercase;
-
-
-
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.phonecta__lista{
-
-
-
-
-padding-left: 0;
-
-
+.phonecta__lista {
+  padding-left: 0;
 }
 
-.phonecta__itemlista{
+.phonecta__itemlista {
+  list-style: none;
 
+  font-family: Cinzel;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
 
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-transform: uppercase;
 
-list-style: none;
-
-
-
-
-
-
-
-font-family: Cinzel;
-font-weight: 700;
-font-style: Bold;
-font-size: 16px;
-
-letter-spacing: 0px;
-vertical-align: middle;
-text-transform: uppercase;
-
-color: $menutexto;
-
+  color: $menutexto;
 }
 
-
-
-
-.phonecta__lista li:nth-child(2)
- {
-
-margin-bottom: 50px;
-
+.phonecta__lista li:nth-child(2) {
+  margin-bottom: 50px;
 }
 
 .phonecta__lista li:last-child {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
+.cabecalho {
+  display: flex;
 
-
-.phonecta__link{
-color:$menutexto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cabecalho{
-
-  display:flex;
-
-
-align-items: center;
-
-
+  align-items: center;
 }
 
 .textomenu {
@@ -248,26 +154,29 @@ align-items: center;
   align-items: flex-start; /* ou center */
 }
 
-.THE, .MET { margin: 0;
-font-size:40px;
-
+.THE,
+.MET {
+  margin: 0;
+  font-size: 40px;
 }
 
-.vector{
+.vector {
 
-  display:inline-block;
 
-background-color:black;
 
-width:40px;
-height:40px;
+  display: inline-block;
 
-background-image: url('../images/Vector.png');
+
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url('../images/Vector.png');
   background-size: cover;
   background-position: center;
 
-margin-top:25px ;
-margin-left:10%;
-
-
+  margin-top: 15px;
+  margin-right: 10%;
+  margin-left:80%;
 }
+
