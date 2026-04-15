@@ -68,11 +68,9 @@
 }
 
 .quadrocolecao {
-
-
- width: 100%;              /* 🔥 ocupa a coluna */
-  max-width: 324px;         /* 🔥 limite no desktop */
-  aspect-ratio: 324 / 320;  /* 🔥 mantém proporção */
+  width: 100%; /* 🔥 ocupa a coluna */
+  max-width: 324px; /* 🔥 limite no desktop */
+  aspect-ratio: 324 / 320; /* 🔥 mantém proporção */
   height: auto;
 
   background-color: black;
@@ -85,9 +83,9 @@
 }
 
 .quadrocolecaotravel {
- width: 100%;              /* 🔥 ocupa a coluna */
-  max-width: 324px;         /* 🔥 limite no desktop */
-  aspect-ratio: 324 / 320;  /* 🔥 mantém proporção */
+  width: 100%; /* 🔥 ocupa a coluna */
+  max-width: 324px; /* 🔥 limite no desktop */
+  aspect-ratio: 324 / 320; /* 🔥 mantém proporção */
   height: auto;
 
   background-color: black;
@@ -100,10 +98,9 @@
 }
 
 .quadrocolecaogrupo {
- width: 100%;              /* 🔥 ocupa a coluna */
-  max-width: 324px;         /* 🔥 limite no desktop */
-  aspect-ratio: 324 / 320;  /* 🔥 mantém proporção */
-
+  width: 100%; /* 🔥 ocupa a coluna */
+  max-width: 324px; /* 🔥 limite no desktop */
+  aspect-ratio: 324 / 320; /* 🔥 mantém proporção */
 
   object-fit: cover;
 
@@ -153,44 +150,34 @@
 }
 
 @media (min-width: 100px) and (max-width: 1024px) {
-
-
-
-.quadrocolecao,
-.quadrocolecaotravel,
-.quadrocolecaogrupo {
-  width: 100%;
-  min-height: 250px; /* 🔥 garante que aparece */
-  background-size: cover;
-  background-position: center;
-}
+  .quadrocolecao,
+  .quadrocolecaotravel,
+  .quadrocolecaogrupo {
+    width: 100%;
+    min-height: 250px; /* 🔥 garante que aparece */
+    background-size: cover;
+    background-position: center;
+  }
 
   .col-4 {
     grid-column: span 12; /* 🔥 1 por linha */
 
-  grid-column: span 12 !important;
+    grid-column: span 12 !important;
+  }
+}
+@media (min-width: 1025px) {
+  .quadrocolecao,
+  .quadrocolecaotravel,
+  .quadrocolecaogrupo {
+    width: 100%;
+    min-height: 324px; /* 🔥 garante que aparece */
+    background-size: cover;
+    background-position: center;
   }
 
-
-
-}
-@media (min-width: 1025px){
-
-.quadrocolecao,
-.quadrocolecaotravel,
-.quadrocolecaogrupo {
-  width: 100%;
-  min-height: 324px; /* 🔥 garante que aparece */
-  background-size: cover;
-  background-position: center;
-}
-
- .col-4 {
+  .col-4 {
     grid-column: span 4; /* 🔥 1 por linha */
 
-  grid-column: span 4 !important;
+    grid-column: span 4 !important;
   }
-
-
-
 }
